@@ -1,0 +1,388 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Bootstrap</title>
+  </head>
+  <body data-spy="scroll" data-target="#navbar-site" data-offset="80">
+    <style>
+        body {
+          position: relative;
+          padding-top: 56px;
+        }
+        section img {
+          width: 100px;
+          display: block;
+        }
+
+      </style>
+  
+    <img class="img-fluid d-none d-sm-inline-block" src="https://raw.githubusercontent.com/planetoftheweb/bootstrap4/master/builds/bootstrap/images/background.jpg" alt="Welcome Doctor Image" >
+  
+
+    <nav id="navbar-site" class="fixed-top navbar navbar-dark bg-primary navbar-expand-sm">
+      <div class="container">
+        <!--hamburger collapsible menu-->
+        <button class="navbar-toggler" type="button"
+        data-toggle="collapse" data-target="#togglerNav"
+        aria-controls="togglerNav"
+        aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <a class="navbar-brand m-0">Wisdom Pet Medicine</a>
+        
+          <!--collapsible navbar-->
+        <div class="collapse navbar-collapse" id="togglerNav">
+
+            <ul class="navbar-nav ml-sm-auto">
+                <li class="nav-item"><a class="text-dark nav-link" href="#mission">Mission</a></li>
+                
+                <!--nav dropdown menu-->
+                <li class="nav-item dropdown">
+                        <a class="text-dark nav-link dropdown-toggle" data-toggle="dropdown" id="servicesDropdown" 
+                        aria-haspopup="true" aria-expanded="false" href="#">Services</a>
+                <!--nav dropdown menu-->
+                        <div class="dropdown-menu" aria-labelledby="servicesDropdown">
+                            <a class="dropdown-item list-group-item-action" href="#exotic">Exotic Pets</a>
+                            <a class="dropdown-item list-group-item-action" href="#grooming">Grooming</a>
+                            <a class="dropdown-item list-group-item-action" href="#gh">General Health</a>
+                            <a class="dropdown-item list-group-item-action" href="#nutri">Nutrition</a>
+                            <a class="dropdown-item list-group-item-action" href="#pestControl">Pest Control</a>
+                            <a class="dropdown-item list-group-item-action" href="#vaccination">Vaccinations</a>
+                        </div>
+
+                </li>
+                        
+
+                
+                
+                <li class="nav-item dropdown"><a class="text-dark nav-link" href="#staff">Staff</a></li>
+                <li class="nav-item dropdown"><a class="text-dark nav-link" href="#testimonials">Testimonials</a></li>
+            </ul><!-- navbar-nav -->
+        </div> <!-- collapse -->
+
+        <!--form-->
+        <form action="POST" class="form-inline d-none d-lg-flex flex-lg-inline-block">
+            <input type="text" class="form-control mr-2" placeholder="Search">
+            <button class="btn btn-outline-light border-color-info active" type="submit">Seek</button>
+        </form>
+      </div><!-- container -->
+    </nav>
+    
+    <div class="container mt-2">
+      
+      <div class="content jumbotron shadow" id="mission">
+            <h2 class="text-center display-3 mb-4">Our Mission</h2>
+        
+            <p>Wisdom Pet Medicine strives to blend the best in traditional and alternative medicine in the diagnosis and treatment of companion animals including dogs, cats, birds, reptiles, rodents, and fish. We apply the wisdom garnered in the centuries old tradition of veterinary medicine, to find the safest treatments and&nbsp;cures.</p>
+            
+            <!--alert message about standard  check ups-->
+            <div class="alert alert-info alert-dismissible fade show">
+              <h4 class="alert-heading">Standard Check ups</h4>
+              <p class="mb-3">Our standard check ups offer Ultrasounds, X-rays and dental cleanings.</p>
+              <a href="#" class="alert-link" data-toggle="popover" title="Standard Check ups"
+              data-placement="right" data-content="Our standard check ups offer Ultrasounds, X-rays and dental cleanings">More Info</a>
+              <button type="button" class="close" data-dismiss="alert" aria-label="close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            
+            <p>We strive to be your pet's medical experts from youth through the senior years. We build preventative health care plans for each and every one of our patients, based on breed, age, and sex, so that your pet receives the most appropriate care at crucial milestones. We want to give your pet a long and <a href="#" data-toggle="tooltip" data-placement="bottom" title="Check our Services Section!" >healthy life</a>.</p>
+            <button type="button" class="btn btn-info" data-toggle="popover" title="Standard Check ups"
+            data-placement="right" data-content="Our standard check ups offer Ultrasounds, X-rays and dental cleanings">Check up Info</button>
+        </div>
+        
+        <div class="container d-none d-md-block my-4">
+
+          <div id="feature" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+
+              <ul class="carousel-indicators">
+                <li data-target="feature" data-slide-to="0"></li>
+                <li data-target="feature" data-slide-to="1"></li>
+                <li data-target="feature" data-slide-to="2"></li>
+                <li data-target="feature" data-slide-to="3" class="active"></li>
+              </ul>
+
+
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="https://raw.githubusercontent.com/planetoftheweb/bootstrap4/master/builds/bootstrap/images/carousel-fish.jpg" alt="Lifestyle Photo">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="https://raw.githubusercontent.com/planetoftheweb/bootstrap4/master/builds/bootstrap/images/carousel-lifestyle.jpg" alt="Mission">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="https://raw.githubusercontent.com/planetoftheweb/bootstrap4/master/builds/bootstrap/images/carousel-vaccinations.jpg" alt="Vaccinations">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100 active" src="https://raw.githubusercontent.com/planetoftheweb/bootstrap4/master/builds/bootstrap/images/carousel-stateoftheart.jpg" alt="state of heart">
+              </div>
+            </div>
+            <a href="#feature" class="carousel-control-prev" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon"
+              aria-hidden="true">
+                <span class="sr-only">Previous</span>
+              </span>
+            </a>
+            <a href="#feature" class="carousel-control-next" role="button" data-slide="next">
+              <span class="carousel-control-next-icon"
+              aria-hidden="true">
+                <span class="sr-only">Next</span>
+              </span>
+            </a>
+          </div>
+
+        </div><!--carousel container-->
+
+        <div class="container" id="services">
+        
+            <h2 class="text-center mb-4">Services</h2>
+            
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-6 align-elements-center justify-content-between">    
+               <div class="col">
+                   <div class="row">
+                        <section id="exotic" class="col">
+                        <img class="mx-auto" src="https://raw.githubusercontent.com/planetoftheweb/bootstrap4/cc5701fdbc372a8e6be99595897c4d05af18a090/builds/bootstrap/images/icon-exoticpets.svg" alt="exotic pet icon">
+                        <h3>Exotic Pets</h3>
+                        <span class="badge badge-danger badge-pill">New</span>
+                        <p>We offer specialized care for reptiles, rodents, birds, and other exotic pets.</p>
+                        </section>
+                    
+                        <section id="grooming" class="col">
+                        <img class="mx-auto" src="https://raw.githubusercontent.com/planetoftheweb/bootstrap4/cc5701fdbc372a8e6be99595897c4d05af18a090/builds/bootstrap/images/icon-grooming.svg" alt="grooming icon">
+                        <h3>Grooming</h3>
+                        <p>Our therapeutic grooming treatments help battle fleas, allergic dermatitis, and other challenging skin conditions.</p>
+                        </section>
+                    
+                        <section id="gh" class="col">
+                        <img class="mx-auto" src="https://raw.githubusercontent.com/planetoftheweb/bootstrap4/cc5701fdbc372a8e6be99595897c4d05af18a090/builds/bootstrap/images/icon-health.svg" alt="general health icon">
+                        <h3>General Health</h3>
+                        <p>Wellness and senior exams, ultrasound, x-ray, and dental cleanings are just a few of our general health services.</p>
+                        </section>
+                    
+                        <section id="nutri" class="col">
+                        <img class="mx-auto" src="https://raw.githubusercontent.com/planetoftheweb/bootstrap4/cc5701fdbc372a8e6be99595897c4d05af18a090/builds/bootstrap/images/icon-nutrition.svg" alt="nutrition icon">
+                        <h3>Nutrition</h3>
+                        <span class="badge badge-danger badge-pill">New</span>
+                        <p>Let our nutrition experts review your pet's diet and prescribe a custom nutrition plan for optimum health and disease prevention.</p>
+                        </section>
+                    
+                        <section id="pestControl" class="col">
+                        <img class="mx-auto" src="https://raw.githubusercontent.com/planetoftheweb/bootstrap4/cc5701fdbc372a8e6be99595897c4d05af18a090/builds/bootstrap/images/icon-pestcontrol.svg" alt="Pest control icon">
+                        <h3>Pest Control</h3>
+                        <p>We offer the latest advances in safe and effective prevention and treatment of fleas, ticks, worms, heart worm, and other parasites.</p>
+                        </section>
+                
+                    
+                        <section id="vaccination" class="col">
+                        <img class="mx-auto" src="https://raw.githubusercontent.com/planetoftheweb/bootstrap4/cc5701fdbc372a8e6be99595897c4d05af18a090/builds/bootstrap/images/icon-vaccinations.svg" alt="vaccination icon">
+                        <h3>Vaccinations</h3>
+                        <p>Our veterinarians are experienced in modern vaccination protocols that prevent many of the deadliest diseases in pets.</p>
+                        </section>
+                   </div> <!--column-->
+               </div><!--row-->
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="staff">
+      <h2 class="text-center mb-5">Our Staff</h2>
+    
+      <div class="row">        
+          <div class="col d-flex flex-column flex-lg-row">
+              
+                  <div class="row justify-content-around px-4">
+                    <div class="col d-flex justify-content-around">
+                      <div class="row d-block align-self-center">
+                          <h3 >Dr. Winthrop</h3>
+                          <h5>Behaviorist</h5>
+                        </div><!--row-->
+                        <img class="img-thumbnail border-primary rounded-circle" src="https://raw.githubusercontent.com/planetoftheweb/bootstrap4/master/builds/bootstrap/images/doctor-winthrop.jpg" width="150px" height="150px">
+                      </div><!--column-->
+                      <p>Dr. Winthrop is the guardian of Missy, a three-year old Llaso mix, who he adopted at the shelter. Dr. Winthrop is passionate about spay and neuter and pet adoption, and works tireless hours outside the clinic, performing free spay and neuter surgeries for the shelter.</p>
+                  </div><!--column-->
+      
+                  <div class="row justify-content-around px-4">
+                    <div class="col d-flex justify-content-around">
+                    <div class="row d-block align-self-center">
+                      <h3>Dr. Chase</h3>
+                      <h5>Behaviorist</h5>
+                    </div><!--row-->
+                      <img class="img-thumbnail border-primary rounded-circle" src="https://raw.githubusercontent.com/planetoftheweb/bootstrap4/master/builds/bootstrap/images/doctor-chase.jpg" width="150px" height="150px">
+                    </div><!--column-->
+                    <p>Dr. Chase spends much of her free time helping the local rescue organization find homes for animals, such as Kibbles - a Maine Coon Cat who is part of the large Chase household, including two dogs, three cats, and a turtle.</p>
+                  </div><!--column-->
+      
+                  <div class="row justify-content-around px-4">
+                    <div class="col d-flex justify-content-around">
+                      <div class="row d-block align-self-center">
+                        <h3>Dr Sanders</h3>
+                        <h5>Behaviorist</h5>
+                      </div><!--row-->
+                      <img class="img-thumbnail border-primary rounded-circle" src="https://raw.githubusercontent.com/planetoftheweb/bootstrap4/master/builds/bootstrap/images/doctor-sanders.jpg" width="150px" height="150px">
+                    </div><!--column-->
+                      <p>Leroy walked into Dr. Sanders front door when he was moving into a new house. After searching for weeks for Leroy's guardians, he decided to make Leroy a part of his pet family, and now has three cats.</p>
+                  </div><!--column-->
+              
+          </div><!--column-->
+      </div> <!--row-->
+      
+    </div> <!--container -->
+
+    
+      <div class="container" id="testimonials">
+        <h2 class ="text-center  mb-3" style="color: var(--teal)">Testimonials</h2>
+        <figure>
+          <img class="img-fluid rounded-circle d-none d-sm-inline-block" src="https://raw.githubusercontent.com/planetoftheweb/bootstrap4/master/builds/bootstrap/images/testimonial-janeh.jpg" alt="Jane H photo" class="img-fluid">
+        </figure>
+        <blockquote class="text-info blockquote my-4 px-4">
+          <p>During the summer, our rabbit, Tonto, began to have severe redness and itching on his belly and feet. Through diagnostic testing, we learned that Tonto is severely allergic to over a dozens kinds of grass pollens. We've now been doing allergy injections for several months, and his itching and redness have nearly gone away.</p>
+          <footer class="text-dark blockquote-footer">Jane H.</footer>
+        </blockquote>
+        <figure>
+          <img class="img-fluid rounded-circle d-none d-sm-inline-block" src="https://raw.githubusercontent.com/planetoftheweb/bootstrap4/master/builds/bootstrap/images/testimonial-mcphersons.jpg" alt="McPhersons photo">
+        </figure>
+        <blockquote class="text-info blockquote mb-4 px-4">
+          <p>When Samantha, our Siamese cat, began sleeping all the time and urinating excessively, we brought her to see the specialists at Wisdom. After running a blood test, Dr. Winthrop confirmed what we all feared - Samantha was showing signs of diabetes. The doctor put us on a daily routine to provide Samantha insulin injections, and showed us how to administer the shots.</p>
+          <footer class="text-dark blockquote-footer">The McPhersons</footer>
+        </blockquote>
+        <figure>
+          <img class="img-fluid rounded-circle d-none d-sm-inline-block" src="https://raw.githubusercontent.com/planetoftheweb/bootstrap4/master/builds/bootstrap/images/testimonial-johnb.jpg" alt="John B photo">
+        </figure>
+        <blockquote class="text-info blockquote mb-4 px-4">
+          <p>The staff at Wisdom worked tirelessly to determine why our three-year old Golden Retriever, Roxie, started going into sudden kidney failure. They stabilized her and provided fluids until her kidneys were again functioning normally. We learned just how toxic grapes and raisins are to pets, and Roxie is no longer allowed to roam unattended in the orchard.</p>
+          <footer class="text-dark blockquote-footer">John B</footer>
+        </blockquote>
+        <figure>
+          <img class="img-fluid rounded-circle d-none d-sm-inline-block" src="https://raw.githubusercontent.com/planetoftheweb/bootstrap4/master/builds/bootstrap/images/testimonial-lorraines.jpg" alt="Lorraine S photo">
+        </figure>
+        <blockquote class="text-info blockquote mb-4 px-4">
+          <p>Wisdom Pet Medicine is the only clinic around that will even book pet fish for appointments. When our 13-year old Comet goldfish, McAllister, turned from silvery white to an angry red, we called around, urgently trying to find a veterinarian who could help. Wisdom not only got us in the same day, but also was able to diagnose McAllister as having a severe case of septicemia.</p>
+          <footer class="text-dark blockquote-footer">Lorraine S</footer>
+        </blockquote>
+      </div>
+    
+    </div><!-- content container -->
+
+    <!--form container-->
+    <div class="container mb-5">
+      
+      <h2 class="text-center mb-2">Medical Questionnaire</h2>
+      <form action="">
+
+        <fieldset class="form-group">
+          <legend>Owner Info</legend>
+          
+          <div class="form-group">
+            <label class="form-control-label" for="ownername">Owner name</label>
+            <input class="form-control" type="text" id="ownername" placeholder="Your Name">
+          </div> <!--form group-->
+        
+          <div class="form-group">
+            <label class="form-control-label" for="owneremail">Email address</label>
+            <input class="form-control" type="email" id="owneremail" aria-describedby="emailHelp">
+            <small class="form-text text-muted" id="emailHelp">we'll never give away your email</small>
+          </div> <!--form group-->
+
+        </fieldset> <!--fieldset-->
+
+        <fieldset class="form-group">
+
+          <legend>Pet Info</legend>
+
+          <div class="form-group">
+            <label class="form-control-label" for="petname">Pet name</label>
+            <input class="form-control" type="text" id="petname" placeholder="Pet's name">
+          </div> <!--form group-->
+
+          <div class="form-group">
+            <label class="form-control-label" for="pettype">Pet type</label>
+            <select class="form-control" id="pettype">
+              <option value="dog">Dog</option>
+              <option value="cat">Cat</option>
+              <option value="horse">Horse</option>
+              <option value="other">Other</option>
+            </select>
+          </div> <!--form group-->
+
+          <div class="form-group">
+            <label class="form-control-label" for="reasonforappointment">Reason for today's appointment</label>
+            <textarea class="form-control id="reasonforappointment" cols="30" rows="5"></textarea>
+          </div> <!--form group-->
+
+        </fieldset>  <!--fieldset-->
+
+        <fieldset class="from-group">
+          
+          <legend>Pet Medical Data</legend>
+
+          <div class="form-group">
+            <label class="d-block">Has your pet been spayed or neutered?</label>
+            
+            <div class="form-check">
+              <label class="form-check-label">
+               Yes <input class="form-check-inline" type="radio" name="spay" value="yes" checked>
+              </label>
+            </div> <!--form check-->
+
+            <div class="form-check">
+              <label class="form-check-label">
+                No <input class="form-check-inline" type="radio" name="spay" value="no">
+              </label>
+            </div> <!--form check-->
+          
+          </div> <!--form group-->
+
+          <div class="form-group">
+            <label>Has the pet had any of the following in the last month</label>
+
+            <div class="form-check"> 
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox">Abdominal pain
+              </label>
+            </div><!--form check-->
+
+            <div class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox">Lack of apettite
+              </label>
+            </div><!--form check-->
+
+            <div class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox"> Weakness 
+              </label>
+            </div><!--form check-->
+
+          </div><!--form group-->
+        </fieldset> <!--fieldset-->
+
+        <button class="btn btn-block btn-primary" type="submit">Submit</button>
+      </form>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script>
+      /*Activating all the tooltip & Popovers in the website*/
+      $(function() {
+      $('[data-toggle="popover"]').popover();
+    });
+    $(function() {
+      $('[data-toggle="tooltip"]').toolip(); 
+    });
+    </script>
+  </body>
+</html>
