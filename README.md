@@ -1,2 +1,2 @@
 # veterinary-website
-A veterinary website created using HTML, CSS and the bootstrap framework.
+A veterinary website created using HTML, CSS, JavaScript and the Bootstrap framework. The website has been created with a responsive design. It is fully responsive on different devices' screens. I've implemented several features like responsive images, a carousel section, a services allotment with each service offered and its icons, a reviews section with images of each reviewer, it has a form which is not fully functional among other terrific features. Due I'm still building the fundational blocks of back end development. The next steps will be to implement a backend service to my projects projects.
